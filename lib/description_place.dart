@@ -59,6 +59,7 @@ class DescriptionPlace extends StatelessWidget{
     final filaEstrellas = Row(
       children:estrellas
     );
+
     final filaTitulo = Row(
       children:<Widget> [
         titulo,
