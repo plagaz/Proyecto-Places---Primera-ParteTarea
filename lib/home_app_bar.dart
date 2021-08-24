@@ -1,6 +1,7 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
+import 'package:proyecto_places/card_image_list.dart';
 import 'package:proyecto_places/gradient_back.dart';
 class HomeAppBar extends StatelessWidget{
   String textoTitulo;
@@ -28,7 +29,8 @@ class HomeAppBar extends StatelessWidget{
     final appBar  = Stack(
       children:<Widget>[
         GradientBack(),
-        titulo
+        titulo,
+        CardImageList()
       ],
     );
     return appBar;
