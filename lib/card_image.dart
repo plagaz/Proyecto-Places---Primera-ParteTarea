@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
+import 'package:proyecto_places/fab_green.dart';
 
 
 class CardImage extends StatelessWidget{
@@ -8,7 +9,7 @@ class CardImage extends StatelessWidget{
   CardImage(this.path);
   @override
   Widget build(BuildContext context) {
-   final cardImage = Padding( padding: EdgeInsets.only(
+   final card = Padding( padding: EdgeInsets.only(
      top: 100,
      right: 15,
      bottom: 20
@@ -35,7 +36,17 @@ class CardImage extends StatelessWidget{
        )
    );
 
-    return cardImage;
+
+   //stack
+   final carImage = Stack(
+     alignment: Alignment(0.7,0.95),
+     children:<Widget>[
+     card,
+     FabGreen()
+     ],
+   );
+
+    return card;
   }
   
 }
