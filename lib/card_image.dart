@@ -38,7 +38,7 @@ class CardImage extends StatelessWidget{
 
 
    //stack
-   final carImage = Stack(
+   final cardImage = Stack(
      alignment: Alignment(0.7,0.95),
      children:<Widget>[
      card,
@@ -46,7 +46,7 @@ class CardImage extends StatelessWidget{
      ],
    );
 
-    return card;
+    return cardImage;
   }
   
 }
